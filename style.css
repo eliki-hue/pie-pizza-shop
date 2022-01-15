@@ -13,12 +13,14 @@
     justify-content: center;
     background-color: rgb(250, 244, 244);
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 #name {
     justify-content: center;
 }
 #name img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 10px;
     margin-top: 80px;
     
@@ -27,22 +29,38 @@
 #logo-image img {
     position: relative;
     padding: 10px;
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
 }
 #icons1,#icons2 {
     display: flex;
+    flex-wrap: wrap;
     
     justify-content: center;
 }
 #icons1 img {
-    width: 300px;
+    max-width: 280px;
+    width: 100%;
     position: relative;
-    padding: 20px;
-    height: 250px;
+    padding: 5px;
+    max-height: fit-content;
+    height: auto;
+    margin-left: 10%;
+    
 }
 #icons2 img {
-    width: 300px;
+    max-width: 280px;
+    width: 100%;
     position: relative;
-    padding: 20px;
-    height: 250px;
+    padding: 5px;
+    max-height: fit-content;
+    height: auto;
+
+}
+.btn {
+    color: blue;
+    background-color: rgb(15, 223, 15);
+    margin-left:30%;
+    margin-bottom: 30px;
+
 }
