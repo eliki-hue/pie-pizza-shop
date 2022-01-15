@@ -57,10 +57,75 @@
     height: auto;
 
 }
+.hidden {
+    display: non;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+  
+
+
+
+}
 .btn {
     color: blue;
     background-color: rgb(15, 223, 15);
-    margin-left:30%;
+    margin-left:10%;
     margin-bottom: 30px;
+    position:absolute;
+    margin-top: 220px;
 
 }
+
+.container2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+
+}
+.container3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+    
+    
+
+}
+
+.container2 {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    width: 240px;
+    height: 200px;
+    margin: 50px;
+    margin-left: 10px;
+    text-align: center;
+    /* background-color:rgb(226, 214, 214); */
+    background-size:cover;
+    padding: 10px;
+    
+    
+    
+    }
+    .content div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border: 5px solid white;
+        padding: px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+        color: white;
+        display: non;
+        
+    }
