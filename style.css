@@ -2,9 +2,18 @@
     align-items: center;
     align-content: center;
 }
-#icon1 {
+#icons1,#icons2 {
     display: flex;
+    
+    justify-content: center;
 }
-.icon1 img {
-    width: 50px;
+#icons1 img {
+    width: 300px;
+    position: relative;
+    padding: 20px;
+}
+#icons2 img {
+    width: 300px;
+    position: relative;
+    padding: 20px;
 }
