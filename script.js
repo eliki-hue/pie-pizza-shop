@@ -3,7 +3,8 @@ $(document).ready(function(){
   
     elementNumbers.forEach(function(element) {
         $("#content"+ element).hover(function() {
-          $("#pizza" + element).show();},
+            $(this).css('opacity','0.7')
+            $("#pizza" + element).show();},
 
          
 
@@ -11,6 +12,7 @@ $(document).ready(function(){
          
          function() {
             $("#pizza" + element).hide()
+            $(this).css('opacity','1')
           
          })
 
