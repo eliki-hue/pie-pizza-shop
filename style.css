@@ -136,3 +136,13 @@
         
     }
 
+/* /////////////    order.html styles        ////////////////////////////// */
+#selectedImage {
+    margin-top: 20px;
+}
+#orderSubmit {
+    width: fit-content;
+    color: white;
+    background-color: blue;
+    font-weight: bolder;
+}
