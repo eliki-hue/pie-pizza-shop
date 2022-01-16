@@ -70,13 +70,14 @@
 
 
 }
-.btn {
+.btn-order {
     color: blue;
     background-color: rgb(15, 223, 15);
     margin-left:10%;
     margin-bottom: 30px;
     position:absolute;
     margin-top: 220px;
+    font-size: ;
 
 }
 
@@ -136,13 +137,4 @@
         
     }
 
-/* /////////////    order.html styles        ////////////////////////////// */
-#selectedImage {
-    margin-top: 20px;
-}
-#orderSubmit {
-    width: fit-content;
-    color: white;
-    background-color: blue;
-    font-weight: bolder;
-}
+zz

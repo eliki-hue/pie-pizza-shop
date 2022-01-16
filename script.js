@@ -16,61 +16,41 @@ $(document).ready(function(){
           
          })
 
-        $('#hidden' + element).click(function(){
-            $(this).hide()
-            $('#whatWeDo' + element)
-      
-        })
+        
+     
     });
+
+    elementNumbers.forEach(function(element) {
+        $("#order"+ element).hover(function() {
+            $(this).css("font-weight","bolder")
+            $(this).css("font-size","larger")
+            $(this).css("color","violet");},
+            
+
+         
+
+            
+         
+         function() {
+            $(this).css('color','blue')
+            $(this).css("font-weight","bold")
+            $(this).css("font-size","large")
+
+            
+         })
+
+        
+     
+    });
+
+    
+
+    function Pizza(crust,size,price){
+        this.crust = crust;
+        this.size = size;
+        this.price =price
+    }
+
+    var crust = document.getElementById
 })
-    // var elementNumbers = ["1", "2", "3", "4", "5", "6", "7", "8"]
-  
-    //   elementNumbers.forEach(function(element) {
-    //       $("#content"+ element).hover(function() {
-    //         //   $(this).hide()
-    //           $('#project' + element ).show()
-              
-    //       })
-  
-    //       $('#hidden' + element).click(function(){
-    //           $(this).hide()
-    //           $('#whatWeDo' + element)
-        
-    //         });
-    //   })
-    // })
-    //   elementNumbers.forEach(function(element) {
-    //     $("#content"+ element).click(function() {
-    //         $(this).css('opacity','0')
-    //         alert("you clicked me"+ element)
-            
-    //         $('#project' + element ).show()
-            
-    //     })
-
-    
-            
-        
-
-    //     $('#project' + element).click(function(){
-    //         $('#project' + element ).css('display','none')
-    //         $('#content' + element).css('opacity', '1')
-            
-      
-    //       });
-    // })
-
-    
-
-    // document.getElementById("formMessage").addEventListener("submit", validateInputHere)
-    // function validateInputHere (){
-            
-    //     var username= document.getElementById('username').value;
-    //     var useremail= document.getElementById('useremail').value;
-             
-    //     alert("hello, " + username + " we have received your message. Thank you for reaching out to us.")
-    // }
-
-
    
-// })
