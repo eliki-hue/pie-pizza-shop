@@ -4,6 +4,7 @@ $(document).ready(function(){
     elementNumbers.forEach(function(element) {
         $("#content"+ element).hover(function() {
             $(this).css('opacity','0.7')
+            $('#price' + element).css('color','red')
             $("#pizza" + element).show();},
 
          
@@ -12,6 +13,7 @@ $(document).ready(function(){
          
          function() {
             $("#pizza" + element).hide()
+            $('#price' + element).css('color','white')
             $(this).css('opacity','1')
           
          })
@@ -25,16 +27,11 @@ $(document).ready(function(){
             $(this).css("font-weight","bolder")
             $(this).css("font-size","larger")
             $(this).css("color","violet");},
-            
-
-         
-
-            
-         
+                     
          function() {
             $(this).css('color','blue')
             $(this).css("font-weight","bold")
-            $(this).css("font-size","large")
+            $(this).css("font-size","medium")
 
             
          })
@@ -42,6 +39,23 @@ $(document).ready(function(){
         
      
     });
+
+    elementNumbers.forEach(function(element) {
+        $("#order"+ element).click(function() {
+            $('#selectedImage' + element).addClass('#content'+ element)
+            
+            
+
+         
+
+            
+         })
+
+        
+     
+    });
+
+
 
     
 
