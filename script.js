@@ -42,7 +42,9 @@ $(document).ready(function(){
 
     elementNumbers.forEach(function(element) {
         $("#order"+ element).click(function() {
-            $('#selectedImage' + element).addClass('#content'+ element)
+            let price= $(this).val()
+            alert(price)
+            
             
             
 
