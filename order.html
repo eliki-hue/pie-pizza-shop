@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+
    
 </head>
 <body>
@@ -31,59 +34,30 @@
 
 
                 <h4><strong>AVAILABLE TOPPINGS</strong></h4>
-                <div id="form2">
-                    <div class="dropdown" data-control="checkbox-dropdown">
-                        <label class="dropdown-label"><strong>Select the topping you like in the pizza:</strong> </label><br>
-                        
-                        
-                            
-                            <label class="dropdown-option">
-                            <input type="checkbox" name="dropdown-group" value="Selection 1" />
-                            Pepperoni
-                            </label><br>
-                            
-                            <label class="dropdown-option">
-                            <input type="checkbox" name="dropdown-group" value="Selection 2" />
-                            Sausage
-                            </label><br>
-                            
-                            <label class="dropdown-option">
-                            <input type="checkbox" name="dropdown-group" value="Selection 3" />
-                            Onion
-                            </label><br>
-                            
-                            <label class="dropdown-option">
-                            <input type="checkbox" name="dropdown-group" value="Selection 4" />
-                            Mushroom
-                            </label><br>
-                            
-                            <label class="dropdown-option">
-                            <input type="checkbox" name="dropdown-group" value="Selection 5" />
-                            Black olives
-                            </label><br>  
-                            <label class="dropdown-option">
-                                <input type="checkbox" name="dropdown-group" value="Selection 3" />
-                                Green pepper
-                            </label><br>
-                            
-                            <label class="dropdown-option">
-                                <input type="checkbox" name="dropdown-group" value="Selection 4" />
-                                Fresh garlic
-                            </label><br>
-                            
-                            <label class="dropdown-option">
-                                <input type="checkbox" name="dropdown-group" value="Selection 5" />
-                                Tomato
-                            </label><br> 
-                            <label class="dropdown-option">
-                                <input type="checkbox" name="dropdown-group" value="Selection 5" />
-                                Fresh basil
-                            </label><br>    
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" id="orderSubmit">SUBMIT</button>
+                <form>
+                    <input type="checkbox" id="Selection1" name="selection" value="Pepperoni">
+                    <label for="Selection1"> Pepperoni</label><br>
 
+                    <input type="checkbox" id="Selection2" name="selection" value="Sausage">
+                    <label for="Selection2"> Sausage</label><br>
+
+                    <input type="checkbox" id="Selection3" name="selection" value="onion">
+                    <label for="Selection3"> onion</label><br>
+                   
+                    <input type="checkbox" id="Selection4" name="selection" value="Mushroom">
+                    <label for="Selection4"> Mushroom</label><br>
+
+                    <input type="checkbox" id="Selection5" name="selection" value="Black olives">
+                    <label for="Selection5"> Black olives</label><br>
+
+                    <input type="checkbox" id="Selection6" name="selection" value="Green pepper">
+                    <label for="Selection6"> Green pepper</label><br><br>
+                    <button type="submit"  onclick="receiveTopping();" action='' id="submit-order">submit</button>
+                </form>
+             
+                
+                            
+                           
             </div>
                    
 
@@ -91,46 +65,15 @@
         </div>
        
         
-        <p id="demo" value='1' onclick="myFunction()">show cost.</p>
+       <p id='showPrice'></p>
 
-<script>
 
-</script>
 
-        <script>
-            
-            var elementNumbers = ["1", "2", "3", "4", "5", "6", "7", "8"]
-            elementNumbers.forEach(function(element) {
-                    $("#orders"+ element).click(function() {
-                        price= $(this).val()
-                        alert(price)
-                        document.getElementById("price").innerHTML = price
-                    
-                        
-                        
-                    
-                    
-                        
-                        
 
-                    
-
-                        
-                    })
-
+           
         
-     
-    });
-    
-
-
-
-        </script>
-        <script src="jquery-3.6.0.js"></script>
-        <script src="script.js"></script>
-
     </div>
-    
+   
     
 </body>
 </html>
