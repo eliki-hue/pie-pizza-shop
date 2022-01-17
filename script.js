@@ -1,4 +1,12 @@
+
+
 $(document).ready(function(){
+
+    
+    $('#priceDisplay').click(function(){
+        alert('you clicked me')
+        document.getElementById(this).innerText='hero'
+    })    
     var elementNumbers = ["1", "2", "3", "4", "5", "6", "7", "8"]
   
     elementNumbers.forEach(function(element) {
@@ -39,16 +47,13 @@ $(document).ready(function(){
         
      
     });
-
+    var price =''
     elementNumbers.forEach(function(element) {
         $("#order"+ element).click(function() {
-            let price= $(this).val()
+            price= $(this).val()
             alert(price)
-            
-            
-            
-
-         
+            get(price)
+       
 
             
          })
@@ -56,9 +61,10 @@ $(document).ready(function(){
         
      
     });
+    
 
 
-
+ 
     
 
     function Pizza(crust,size,price){
@@ -67,6 +73,35 @@ $(document).ready(function(){
         this.price =price
     }
 
-    var crust = document.getElementById
+    // var crust = document.getElementById
 })
-   
+
+  alert('outside '+price.val())
+
+  function get(price){
+      alert('thi is price '+price)
+      alert(typeof(price))
+      let price2= parseInt(price)
+      alert(typeof(price2))
+
+
+        }
+        function myFunction() {
+           
+              document.getElementById("demo").innerHTML = 'i am here';
+            }
+
+//   function myFunction() {
+//       alert(price2)
+//       if(price2<=1000){
+//         document.getElementById("demo").innerHTML = "Cost is 1000";
+//       }
+//       else if(price2<=1100){
+//         document.getElementById("demo").innerHTML = "cost is 1100";
+//       }
+//       else{
+//         document.getElementById("demo").innerHTML = "non of the above";
+//       }
+
+    
+//   }

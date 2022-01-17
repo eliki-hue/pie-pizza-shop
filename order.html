@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
-    <script src="script.js"></script>
-    <script src="jquery-3.6.0.js"></script>
+   
 </head>
 <body>
     <div class="container">
@@ -90,11 +89,48 @@
 
 
         </div>
+       
+        
+        <p id="demo" value='1' onclick="myFunction()">show cost.</p>
+
+<script>
+
+</script>
+
+        <script>
+            
+            var elementNumbers = ["1", "2", "3", "4", "5", "6", "7", "8"]
+            elementNumbers.forEach(function(element) {
+                    $("#orders"+ element).click(function() {
+                        price= $(this).val()
+                        alert(price)
+                        document.getElementById("price").innerHTML = price
+                    
+                        
+                        
+                    
+                    
+                        
+                        
+
+                    
+
+                        
+                    })
+
+        
+     
+    });
+    
 
 
 
+        </script>
+        <script src="jquery-3.6.0.js"></script>
+        <script src="script.js"></script>
 
     </div>
+    
     
 </body>
 </html>
