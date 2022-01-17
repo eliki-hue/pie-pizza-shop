@@ -46,58 +46,25 @@ $(document).ready(function(){
         
      
     });
-    // var price =''
-    // elementNumbers.forEach(function(element) {
-    //     $("#order"+ element).click(function() {
-    //         price= $(this).val()
-    //         alert(price)
-    //         get(price)
-    //     }
-    //     $()
+    var price =''
+    elementNumbers.forEach(function(element) {
+        $("#order"+ element).click(function() {
+            price= $(this).val()
+            alert(price)
+            get(price)
+        });
        
-
-            
-    //      })
 
         
      
-    // });
+    });
     
 
-    // $("button").click(function(){
-    //      var topping = [];
-    //     $.each($("input[name='selection']").change(function(){
-    //         var checkedItems = $(this).val();
-    //         alert(checkedItems)
-    //         if($(this).is(':checked')){
-    //             topping.push(checkedItems);
-    //         }
-            
-    //     }));
-    //     $('#submit-order').on('click', function(){
-    //         console.log(topping)
-    //     })
-        
-    // });
     
 
 
 })
-function receive(){
-var checkedItems =[] 
 
-var Pepperoni = document.getElementById('selection1').checked;
-var Sausage = document.getElementById('selection2').checked;
-var onion = document.getElementById('selection3').checked;
-var Mushroom = document.getElementById('selection4').checked;
-var BlackOlives = document.getElementById('selection5').checked;
-var GreenPepper = document.getElementById('selection6').checked;
-
-alert(Pepperoni)
-alert(Sausage)
-alert(onion)
-
-}
 
 
 function Pizza(crust,size,price){
@@ -125,8 +92,8 @@ function receiveSize(){
 
     alert(size)
 
-
-}
+    return size
+} 
 function receiveTopping(){
     var checkedItems =[] 
     
@@ -175,4 +142,7 @@ function receiveTopping(){
         checkedItems.push(g)
     }
     alert(checkedItems)
+
+   return checkedItems
 }
+alert("price: " + price +'; size:' + size + "  Topping: " + checkedItems )
