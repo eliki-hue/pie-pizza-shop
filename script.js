@@ -105,6 +105,28 @@ function Pizza(crust,size,price){
     this.size = size;
     this.price =price
 }
+function receiveSize(){
+    var smallSelect = document.getElementById("small");
+    var mediumSelect = document.getElementById('medium');
+    var largeSelect = document.getElementById('large');
+
+    var size ='' 
+
+    if(smallSelect.checked == true){
+        size = 'Small'
+    }
+    else if(mediumSelect.checked == true){
+        size = 'Medium'
+    }
+    else if(largeSelect.checked == true){
+        size ='Large'
+    }
+    
+
+    alert(size)
+
+
+}
 function receiveTopping(){
     var checkedItems =[] 
     

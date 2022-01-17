@@ -18,23 +18,22 @@
         <div class="row">
             <div class="col-sm-4" id=selectedImage>4</div>
             <div class="col-sm-8" >
-               <br>
-                
-                  <form id="form1">
-                    Select the size:
-                    <select  width=300 
-                            style="width: 350px">
-                      <option value='small'>Small</option>
-                      <option value='medium'>Medium</option>
-                      <option value='large'>Large</option>
-                      <option value='' selected>Select a Color</option>
-                    </select>
-                </form>
+            
                 <br><br>
-
+                
+                <input type="radio" id="small" name="fav_language" value="small">
+                <label for="html">Small</label><br>
+                <input type="radio" id="medium" name="fav_language" value="medium">
+                <label for="css">Medium</label><br>
+                <input type="radio" id="large" name="fav_language" value="large">
+                <label for="large">Large</label>
+                
+                  <br><br> 
+                
 
                 <h4><strong>AVAILABLE TOPPINGS</strong></h4>
                 <form>
+                    
                     <input type="checkbox" id="Selection1" name="selection" value="Pepperoni">
                     <label for="Selection1"> Pepperoni</label><br>
 
@@ -52,7 +51,7 @@
 
                     <input type="checkbox" id="Selection6" name="selection" value="Green pepper">
                     <label for="Selection6"> Green pepper</label><br><br>
-                    <button type="submit"  onclick="receiveTopping();" action='' id="submit-order">submit</button>
+                    <button type="submit"  onclick="receiveTopping(), receiveSize();" action='' id="submit-order">submit</button>
                 </form>
              
                 
