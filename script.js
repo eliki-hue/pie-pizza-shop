@@ -50,6 +50,8 @@ $(document).ready(function(){
             
             
             
+            
+            
         });
        
 
@@ -57,10 +59,11 @@ $(document).ready(function(){
      
     });
     
-
-    $('#delivery').change(function(){
+    $('#delivery').change(function(price){
         prompt('Enter delivery location:')
+        confirm('delivery cost is ksh.200')
         alert('Your pizza will be delivered')
+       
     })
     
 
@@ -201,8 +204,12 @@ function get8(){
     price =1700
     pizzaname ='Wrapping'
     alert('new price set ' +price)
+    
     return pizzaname, price
 }
 function check(pizzaname,price,checkedItems){
     alert(pizzaname, price, checkedItems)
+}
+function receiveDelivery(){
+
 }
