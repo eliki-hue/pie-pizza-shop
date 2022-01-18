@@ -58,7 +58,10 @@ $(document).ready(function(){
     });
     
 
-    
+    $('#delivery').change(function(){
+        prompt('Enter delivery location:')
+        alert('Your pizza will be delivered')
+    })
     
 
 })
