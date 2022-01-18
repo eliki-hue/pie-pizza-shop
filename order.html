@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
     <script src="jquery-3.6.0.js"></script>
     <script src="script.js"></script>
+    <script src="script2.js"></script>
 
    
 </head>
@@ -32,7 +33,7 @@
                 
 
                 <h4><strong>AVAILABLE TOPPINGS</strong></h4>
-                <form>
+                <form onsubmit="return false">
                     
                     <input type="checkbox" id="Selection1" name="selection" value="Pepperoni">
                     <label for="Selection1"> Pepperoni</label><br>
@@ -58,11 +59,11 @@
                     <input type="checkbox" onclick="receiveDerivery()" id="delivery" name="selection" value="">
                     <label for="delivery" style="color: green;"> Would you like the pizza to be delivered?</label><br>
                     <br>
-                    <button type="submit"  onclick="receiveTopping(), receiveSize(),check();" action='' id="submit-order">submit</button>
+                    <button type="submit"  action='' id="submit-order">submit</button>
                 </form>
                 <br>
-                
-                   <button>Checkout</button>         
+                    <p id="display">price</p>
+                   <button onclick="elementCombine()">Checkout</button>         
                            
             </div>
                    
