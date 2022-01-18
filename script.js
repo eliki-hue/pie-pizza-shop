@@ -2,10 +2,7 @@
 $(document).ready(function(){
 
     
-    $('#priceDisplay').click(function(){
-        alert('you clicked me')
-        document.getElementById(this).innerText='hero'
-    })    
+      
     var elementNumbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   
     elementNumbers.forEach(function(element) {
@@ -46,12 +43,13 @@ $(document).ready(function(){
         
      
     });
-    var price =''
+    
     elementNumbers.forEach(function(element) {
         $("#order"+ element).click(function() {
             price= $(this).val()
-            alert(price)
-            get(price)
+            
+            
+            
         });
        
 
@@ -61,10 +59,9 @@ $(document).ready(function(){
     
 
     
-
+    
 
 })
-
 
 
 function Pizza(crust,size,price){
@@ -145,4 +142,46 @@ function receiveTopping(){
 
    return checkedItems
 }
-alert("price: " + price +'; size:' + size + "  Topping: " + checkedItems )
+let price = ''
+function get1(){
+   
+    price =1000
+    alert('new price set ' +price)
+}
+function get2(){
+    
+    price =1100
+    alert('new price set ' +price)
+}
+function get3(){
+    
+    price =1200
+    alert('new price set ' +price)
+}
+function get4(){
+    
+    price =1300
+    alert('new price set ' +price)
+}
+function get5(){
+    
+    price =1400
+    alert('new price set ' +price)
+}
+function get6(){
+    
+    price =1500
+    alert('new price set ' +price)
+}
+function get7(){
+    
+    price =1600
+    alert('new price set ' +price)
+}
+function get8(){
+    
+    price =1700
+    alert('new price set ' +price)
+}
+
+
