@@ -142,4 +142,17 @@
     display: none;
     
 }
+#orderImage{
+    width:430px ;
+    position: relative;
+}
+#orderImage img{
+    width: 100%;
+}
+#orderRow {
+    background-color:rgb(230, 219, 219);
+    display: flex;
+
+}
+
 
