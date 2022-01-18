@@ -143,45 +143,63 @@ function receiveTopping(){
    return checkedItems
 }
 let price = ''
+let pizzaname = ''
 function get1(){
    
     price =1000
+    pizzaname = 'Cracker'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get2(){
     
     price =1100
+    pizzaname = 'Stuffed'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get3(){
     
     price =1200
+    pizzaname ='Double'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get4(){
     
     price =1300
+    pizzaname ='flat-bread'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get5(){
     
     price =1400
+    pizzaname ='cheese'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get6(){
     
     price =1500
+    pizzaname ='Thin & crispy'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get7(){
     
     price =1600
+    pizzaname ='gluten-free'
     alert('new price set ' +price)
+    return pizzaname, price
 }
 function get8(){
     
     price =1700
+    pizzaname ='Wrapping'
     alert('new price set ' +price)
+    return pizzaname, price
 }
-
-
+function check(pizzaname,price,checkedItems){
+    alert(pizzaname, price, checkedItems)
+}

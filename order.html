@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4" id=selectedImage>4</div>
+            <div class="col-sm-4" id=selectedImage><img src="images/order logo.jpeg" alt=""></div>
             <div class="col-sm-8" >
             
                 <br><br>
@@ -51,7 +51,13 @@
 
                     <input type="checkbox" id="Selection6" name="selection" value="Green pepper">
                     <label for="Selection6"> Green pepper</label><br><br>
-                    <button type="submit"  onclick="receiveTopping(), receiveSize();" action='' id="submit-order">submit</button>
+
+                    <input type="text">
+
+                    <input type="checkbox" id="delivery" name="selection" value="Pepperoni">
+                    <label for="Selection1" style="color: green;"> Would you like the pizza to be delivered?</label><br>
+                    <br>
+                    <button type="submit"  onclick="receiveTopping(), receiveSize(),check();" action='' id="submit-order">submit</button>
                 </form>
              
                 
