@@ -27,14 +27,6 @@ const thin =new PizzaCrust('Thin & cripsy', 7000, '7', 'images/Thin & crispy piz
 const wrapping = new PizzaCrust('Wrapping', 8000, '8', 'images/wrapping-pizza-crust.jpeg')
 
 
-function Topping(name, cost, id){
-    this.name = name;
-    this.cost = cost;
-    this.id = id
-}
-
-
-
 productDetails=[]
  var products = [cracker,cheese, double, flat, gluten, stuffed,thin, wrapping]
  let item ='';
@@ -65,16 +57,18 @@ function Display(products){
     });
 }
 
-    const buttons =[...document.querySelectorAll('.bag-btn')]
-    console.log(buttons.id)
+//     const buttons =[...document.querySelectorAll('.bag-btn')]
+//     console.log(buttons.id)
     
-   for (var i =0; i<buttons.length; i++){
-       var button = buttons[i]
-       button.addEventListener('click',function(){
-           console.log('clicked')
+//    for (var i =0; i<buttons.length; i++){
+//        var button = buttons[i]
+//        button.addEventListener('click',function(){
+//            console.log('clicked')
            
-       })
-   }
+//        })
+//    }
+
+
    var cost =0
 var btn1 = document.getElementById('1').addEventListener('click',function(){
     
