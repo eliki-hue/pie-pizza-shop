@@ -174,7 +174,9 @@ body {
     width: 60%;
     height: 60%;
 }
-
+#social {
+  text-align: center;
+}
 
 
 
