@@ -77,7 +77,7 @@ function Display(products){
    }
    var cost =0
 var btn1 = document.getElementById('1').addEventListener('click',function(){
-    cost +=1000
+    
     var size = prompt('select the size you want: 1.small => ksh.1000   2.medium => ksh.1100 and 3.large => ksh.1300 ')
     if (size =='1'){
         cost =1000
@@ -110,14 +110,14 @@ var btn1 = document.getElementById('1').addEventListener('click',function(){
 })
 
 var btn2 = document.getElementById('2').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want: 1.small => ksh.1000 2.medium => ksh.1100  and  3.large  => ksh.1300 ')
+    
+    var size = prompt('select the size you want: 1.small => ksh.1200 2.medium => ksh.1300  and  3.large  => ksh.1400 ')
     if (size =='1'){
-        cost =1000
+        cost +=1200
     }else if(size=='2'){
-        cost += 1100
-    }else if(size=='3'){
         cost += 1300
+    }else if(size=='3'){
+        cost += 1400
     }else{alert('enter value between 1-3')}
     var topping = prompt('select the topping: 1: Pepperoni & mushroom => ksh 250  2. Sausage & Black olives => ksh. 300  3. Fresh garlic & Fresh basil =>ksh.350')
     if (topping =='1'){
@@ -143,14 +143,14 @@ var btn2 = document.getElementById('2').addEventListener('click',function(){
 })
 
 var btn3 = document.getElementById('3').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want: 1.small => ksh.1000  2.medium => ksh.1100 and 3.large => ksh.1300 ')
+   
+    var size = prompt('select the size you want: 1.small => ksh.1300  2.medium => ksh.1400 and 3.large => ksh.1500 ')
     if (size =='1'){
-        cost =1000
+        cost =1300
     }else if(size=='2'){
-        cost += 1100
+        cost += 1400
     }else if(size=='3'){
-        cost += 1300
+        cost += 1500
     }else{alert('enter value between 1-3')}
     var topping = prompt('select the topping: 1: Pepperoni & mushroom => ksh 250  2. Sausage & Black olives => ksh. 300  3. Fresh garlic & Fresh basil =>ksh.350')
     if (topping =='1'){
@@ -176,10 +176,10 @@ var btn3 = document.getElementById('3').addEventListener('click',function(){
 })
 
 var btn4 = document.getElementById('4').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want: 1.small => ksh.1000  2.medium => ksh.1100 and 3.large => ksh.1300 ')
+    
+    var size = prompt('select the size you want: 1.small => ksh.1100  2.medium => ksh.1200 and 3.large => ksh.1300 ')
     if (size =='1'){
-        cost =1000
+        cost +=1100
     }else if(size=='2'){
         cost += 1100
     }else if(size=='3'){
@@ -209,14 +209,14 @@ var btn4 = document.getElementById('4').addEventListener('click',function(){
 })
 
 var btn5 = document.getElementById('5').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want: 1.small => ksh.1000  2.medium => ksh.1100  and  3.large => ksh.1300 ')
+   
+    var size = prompt('select the size you want: 1.small => ksh.1300  2.medium => ksh.1400  and  3.large => ksh.1500 ')
     if (size =='1'){
-        cost =1000
+        cost +=1300
     }else if(size=='2'){
-        cost += 1100
+        cost += 1400
     }else if(size=='3'){
-        cost += 1300
+        cost += 1500
     }else{alert('enter value between 1-3')}
     var topping = prompt('select the topping: 1: Pepperoni & mushroom => ksh 250  2. Sausage & Black olives => ksh. 300  3. Fresh garlic & Fresh basil =>ksh.350')
     if (topping =='1'){
@@ -242,14 +242,14 @@ var btn5 = document.getElementById('5').addEventListener('click',function(){
 })
 
 var btn6 = document.getElementById('6').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want: 1.small => ksh.1000  2.medium => ksh.1100  and  3.large => ksh.1300 ')
+   
+    var size = prompt('select the size you want: 1.small => ksh.1600  2.medium => ksh.1700  and  3.large => ksh.1800 ')
     if (size =='1'){
-        cost =1000
+        cost =1600
     }else if(size=='2'){
-        cost += 1100
+        cost += 1700
     }else if(size=='3'){
-        cost += 1300
+        cost += 1800
     }else{alert('enter value between 1-3')}
     var topping = prompt('select the topping: 1: Pepperoni & mushroom => ksh 250  2. Sausage & Black olives => ksh. 300  3. Fresh garlic & Fresh basil =>ksh.350')
     if (topping =='1'){
@@ -275,14 +275,14 @@ var btn6 = document.getElementById('6').addEventListener('click',function(){
 })
 
 var btn7 = document.getElementById('7').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want: 1.small => ksh.1000  2.medium => ksh.1100  and  3.large => ksh.1300 ')
+   
+    var size = prompt('select the size you want: 1.small => ksh.1500  2.medium => ksh.1600  and  3.large => ksh.1700 ')
     if (size =='1'){
-        cost =1000
+        cost +=1500
         }else if(size=='2'){
-        cost += 1100
+        cost += 1600
     }else if(size=='3'){
-        cost += 1300
+        cost += 1700
     }else{alert('enter value between 1-3')}
     var topping = prompt('select the topping: 1: Pepperoni & mushroom => ksh 250  2. Sausage & Black olives => ksh. 300  3. Fresh garlic & Fresh basil =>ksh.350')
     if (topping =='1'){
@@ -310,14 +310,14 @@ var btn7 = document.getElementById('7').addEventListener('click',function(){
 })
 
 var btn8 = document.getElementById('8').addEventListener('click',function(){
-    cost +=1000
-    var size = prompt('select the size you want:  1.small => ksh.1000   2.medium => ksh.1100 and   3.large => ksh.1300 ')
+   
+    var size = prompt('select the size you want:  1.small => ksh.1400   2.medium => ksh.1500 and   3.large => ksh.1600 ')
     if (size =='1'){
-        cost =1000
+        cost =1400
     }else if(size=='2'){
-        cost += 1100
+        cost += 1500
     }else if(size=='3'){
-        cost += 1300
+        cost += 1600
     }else{alert('enter value between 1-3')}
     var topping = prompt('select the topping: 1: Pepperoni & mushroom => ksh 250  2. Sausage & Black olives => ksh. 300  3. Fresh garlic & Fresh basil =>ksh.350')
     if (topping =='1'){
