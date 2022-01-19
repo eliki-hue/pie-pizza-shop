@@ -4,7 +4,10 @@
 }
 /* //////////// */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-
+h1{
+  text-align: center;
+  
+}
 
 * {
   margin: 0;
@@ -43,15 +46,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-.cart-items {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: var(--primaryColor);
-  padding: 0 5px;
-  border-radius: 30%;
-  color: var(--mainWhite);
-}
+
 /* --------------- End of Navbar ---------------- */
 
 /* --------------- Products ---------------- */
@@ -129,36 +124,7 @@ body {
 
 /* ---------------End of Products ---------------- */
 /* --------------- Cart ---------------- */
-.cart-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transition: var(--mainTransition);
-  background: rgb(240, 157, 81, 0.5);
-  z-index: 2;
-  visibility: hidden;
-}
-.cart {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  z-index: 3;
-  background: rgb(231, 226, 221);
-  padding: 1.5rem;
-  transition: var(--mainTransition);
-  transform: translateX(100%);
-}
-.showCart {
-  transform: translateX(0);
-}
-.transparentBcg {
-  visibility: visible;
-}
+
 @media screen and (min-width: 768px) {
   .cart {
     width: 30vw;
@@ -166,50 +132,7 @@ body {
   }
 }
 
-.close-cart {
-  font-size: 1.7rem;
-  cursor: pointer;
-}
-.cart h2 {
-  text-transform: capitalize;
-  text-align: center;
-  letter-spacing: var(--mainSpacing);
-  margin-bottom: 2rem;
-}
-/*---------- Cart Item -------------------- */
-.cart-item {
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto 1fr auto;
-  grid-column-gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-.cart-item img {
-  width: 75px;
-  height: 75px;
-}
-.cart-item h4 {
-  font-size: 0.85rem;
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
-.cart-item h5 {
-  margin: 0.5rem 0;
-  letter-spacing: var(--mainSpacing);
-}
-.item-amount {
-  text-align: center;
-}
-.remove-item {
-  color: grey;
-  cursor: pointer;
-}
-.fa-chevron-up,
-.fa-chevron-down {
-  color: var(--primaryColor);
-  cursor: pointer;
-}
-/*---------- End of Cart Item -------------------- */
+
 
 .cart-footer {
   margin-top: 2rem;
@@ -222,12 +145,6 @@ body {
 }
 
 /* --------------- End of Cart ---------------- */
-
-
-
-  /* /////////////////////////////// */
-
-
 
 #logo {
     display: flex;
@@ -257,124 +174,8 @@ body {
     width: 60%;
     height: 60%;
 }
-#icons1,#icons2 {
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-}
-#icons1 img {
-    max-width: 280px;
-    width: 100%;
-    position: relative;
-    padding: 5px;
-    max-height: fit-content;
-    height: auto;
-    margin-left: 10%;
-    
-}
-#icons2 img {
-    max-width: 280px;
-    width: 100%;
-    position: relative;
-    padding: 5px;
-    max-height: fit-content;
-    height: auto;
-
-}
-.hidden {
-    display: non;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-  
 
 
 
-}
-.btn-order {
-    color: blue;
-    background-color: rgb(15, 223, 15);
-    margin-left:10%;
-    margin-bottom: 30px;
-    position:absolute;
-    margin-top: 220px;
-    
-
-}
-.price {
-    margin-left:0%;
-    margin-bottom: 30px;
-    position:absolute;
-    margin-top: 0px;
-    font-size:x-large;
-    color: white;
-}
-
-.container2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 1px;
-
-}
-.container3 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 1px;
-    
-    
-
-}
-
-.container2 {
-    display: flex;
-}
-
-.content {
-    display: flex;
-    position: relative;
-    width: fit-content;
-    height: 200px;
-    margin: 50px;
-    margin-left: 10px;
-    text-align: center;
-    background-color:black;
-    background-size: 100%;
-    padding: 10px;
-
-    
-}
-.content div{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border: 5px solid white;
-    width: 100%;
-    height: 100%;
-    
-    /* margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    margin-right: 10px; */
-    color: white;
-    display: none;
-    
-}
-#orderImage{
-    width:430px ;
-    position: relative;
-}
-#orderImage img{
-    width: 100%;
-}
-#orderRow {
-    background-color:rgb(230, 219, 219);
-    display: flex;
-
-}
 
 
